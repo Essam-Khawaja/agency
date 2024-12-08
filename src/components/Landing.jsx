@@ -1,4 +1,5 @@
 import Magnetic from "./Magnetic";
+import { motion, transform } from "framer-motion";
 import Footer from "./Footer";
 import "./styling/Landing.css";
 import heroImage from "./images/Mobile Marketing-cuate.svg";
@@ -11,7 +12,12 @@ import deliveryTruck from "./images/icons/delivery_truck_speed_24dp_E8EAED_FILL0
 function Landing(props) {
   return (
     <div>
-      <div className="hero-container">
+      <motion.div
+        className="hero-container"
+        initial={{ opacity: 0, y: 70 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, ease: "easeOut" }}
+      >
         <div className="hero-text-container">
           <h1 className="heading">
             Tap Into The <br /> Digital Market
@@ -22,9 +28,14 @@ function Landing(props) {
           <button className="home-button">Get my Digital Brand!</button>
         </div>
         <img id="hero-image" src={heroImage} alt="#"></img>
-      </div>
+      </motion.div>
 
-      <div className="problem-container">
+      <motion.div
+        className="problem-container"
+        intial={{ opacity: 0, scaleY: 2 }}
+        animate={{ opacity: 255, scaleY: 1 }}
+        transition={{ duration: 1, ease: "easeOut" }}
+      >
         <h1 className="heading problem">How You Are Falling Behind</h1>
         <h2 className="sub-heading">Does this sound familiar?</h2>
         <ul className="list-container">
@@ -45,7 +56,7 @@ function Landing(props) {
             <li>Unable to keep up with the new technology?</li>
           </div>
         </ul>
-      </div>
+      </motion.div>
 
       <div className="solution-container">
         <img src={tempImage} alt="#"></img>

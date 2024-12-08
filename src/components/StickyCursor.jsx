@@ -12,7 +12,7 @@ function StickyCursor({ stickyElement, z = -100 }) {
       ]
     : [15, 15];
   const circleOrNot = isHovered ? "12px" : "50%";
-  const highlight = isHovered ? "#E01F65" : "#ffffff";
+  const highlight = isHovered ? "#e01f65" : "#ffffff";
   const mouse = {
     x: useMotionValue(0),
     y: useMotionValue(0),

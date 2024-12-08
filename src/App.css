@@ -5,6 +5,10 @@
     color: white;
 }
 
+body {
+    background-color: #1e1e1e;
+}
+
 ::selection {
     color: black;
     background-color: #E01F65;

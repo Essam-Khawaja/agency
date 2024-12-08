@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    padding: 0 7%;
+}
+
+/* Hero */
+
+.hero {
+    height: 80vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.left {
+    width: 40%;
+}
+
+.hero img{
+    width: 500px;
+}
+
+/* Stats */
+.stats {
+    height: 60vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* Team */
+
+.team {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.team-member {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.team-member img {
+    width: 200px;
+    margin: 50px;
+}
+
+.team-member div {
+    width: 33%;
+}

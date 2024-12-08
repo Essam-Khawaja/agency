@@ -1,5 +1,6 @@
 import Magnetic from "./Magnetic";
 import { forwardRef, useRef } from "react";
+import { Link, NavLink } from "react-router-dom";
 import "./styling/Nav.css";
 import StickyCursor from "./StickyCursor";
 
@@ -11,16 +12,44 @@ function Nav(props) {
         <div className="bounds" ref={ref}>
           <ul>
             <Magnetic>
-              <button className="nav-button">Home</button>
+              <NavLink
+                to="/"
+                className={({ isActive }) => {
+                  return isActive ? "nav-button-highlighted" : "nav-button";
+                }}
+              >
+                Home
+              </NavLink>
             </Magnetic>
             <Magnetic>
-              <button className="nav-button">Portfolio</button>
+              <NavLink
+                to="/about"
+                className={({ isActive }) => {
+                  return isActive ? "nav-button-highlighted" : "nav-button";
+                }}
+              >
+                About
+              </NavLink>
             </Magnetic>
             <Magnetic>
-              <button className="nav-button">Services</button>
+              <NavLink
+                to="/services"
+                className={({ isActive }) => {
+                  return isActive ? "nav-button-highlighted" : "nav-button";
+                }}
+              >
+                Services
+              </NavLink>
             </Magnetic>
             <Magnetic>
-              <button className="nav-button">Work With US!</button>
+              <NavLink
+                to="/contact"
+                className={({ isActive }) => {
+                  return isActive ? "nav-button-highlighted" : "nav-button";
+                }}
+              >
+                Work With US!
+              </NavLink>
             </Magnetic>
           </ul>
         </div>
