@@ -3,6 +3,8 @@ import About from "./components/About";
 import RootLayout from "./components/routes/RootLayout";
 import { RouterProvider, createBrowserRouter, NavLink } from "react-router-dom";
 import "./app.css";
+import Services from "./components/Service.jsx";
+import ServiceCard from "./components/ServiceCard.jsx";
 
 const router = createBrowserRouter([
   {
@@ -11,6 +13,11 @@ const router = createBrowserRouter([
     children: [
       { path: "/", element: <Landing /> },
       { path: "/about", element: <About /> },
+      {
+        path: "/services",
+        element: <Services />,
+        children: [],
+      },
     ],
     errorElement: (
       <div>

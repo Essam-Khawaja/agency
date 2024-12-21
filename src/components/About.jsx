@@ -1,7 +1,10 @@
 import tempImage from "./images/Your paragraph text.png";
-import lightBulb from "./images/icons/lightbulb_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg";
-import flowChart from "./images/icons/flowchart_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg";
-import deliveryTruck from "./images/icons/delivery_truck_speed_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg";
+import heroImage from "./images/Stress-rafiki.svg";
+import essam from "./images/IMG_3040.jpeg";
+import youtubeIcon from "./images/icons/youtube_activity_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg";
+import codeIcon from "./images/icons/code_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg";
+import socialIcon from "./images/icons/public_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg";
+import Separator from "./Separator";
 
 import "./styling/About.css";
 
@@ -10,43 +13,43 @@ function About(props) {
     <div>
       <div className="hero">
         <div className="left">
-          <h1>I remember stagnating</h1>
-          <p>
+          <h1 className="hero-left-title">I Remember Stagnating</h1>
+          <p className="hero-left-description">
             I was never a social media person, but I realised this was
             preventing my personal growth. Whether it be the lack of job offers
             or the lack of opportunities for me to put myself out there, I truly
             believe that the internet is a great place for growth.
           </p>
         </div>
-        <img src={tempImage} alt="#"></img>
+        <img src={heroImage} alt="#"></img>
       </div>
 
+      <Separator />
+
+      <h1 className="stats-title">Why Us?</h1>
       <div className="stats">
         <div class="card">
-          <img src={lightBulb} alt="#"></img>
-          <h1>2 weeks</h1>
+          <img src={youtubeIcon} alt="#"></img>
+          <h1>4+ Years of Content Creation</h1>
           <p className="why-description">
-            We design everything from scratch; using only your guidance and
-            opinion. Once you give us your vision, we begin working to ensure
-            that vision comes true!
+            Our in-house editor has been making content for about half a decade,
+            so we guarantee great results!
           </p>
         </div>
         <div class="card">
-          <img src={flowChart} alt="#"></img>
-          <h1>5+ years</h1>
+          <img src={codeIcon} alt="#"></img>
+          <h1>2+ Years of Web Developmet</h1>
           <p className="why-description">
-            We work swift and fast, ensuring to use the latest project
-            management techniques with thorough documentation, ensuring the
-            completion of your task.
+            Our in-house web developer can do full stack development, from a
+            simple blog website to complex e-commerce businesses
           </p>
         </div>
         <div class="card">
-          <img src={deliveryTruck} alt="#"></img>
-          <h1>10+ years</h1>
+          <img src={socialIcon} alt="#"></img>
+          <h1>10+ years of Social Media</h1>
           <p className="why-description">
-            We give you the best possible solution, with modern platforms for
-            your website deployments, and the latest trends for your social
-            media marketing!
+            We have used social media for our entire lives, so we know exactly
+            what type of marketing works!
           </p>
         </div>
       </div>
@@ -58,7 +61,7 @@ function About(props) {
             <h2>Essam</h2>
             <p>Help please</p>
           </div>
-          <img src={tempImage} alt="#"></img>
+          <img src={essam} alt="#" className="profile-picture"></img>
         </div>
         <div className="team-member">
           <img src={tempImage} alt="#"></img>

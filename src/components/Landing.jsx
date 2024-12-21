@@ -4,7 +4,7 @@ import Footer from "./Footer";
 import "./styling/Landing.css";
 import heroImage from "./images/Mobile Marketing-cuate.svg";
 import rightArrow from "./images/icons/arrow_circle_right.svg";
-import tempImage from "./images/Mobile Marketing-bro.svg";
+import tempImage from "./images/brand loyalty-rafiki.svg";
 import lightBulb from "./images/icons/lightbulb_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg";
 import flowChart from "./images/icons/flowchart_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg";
 import deliveryTruck from "./images/icons/delivery_truck_speed_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg";
