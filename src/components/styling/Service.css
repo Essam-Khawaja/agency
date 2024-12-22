@@ -7,8 +7,11 @@
     justify-content: space-evenly;
 }
 
-.service-hero > p {
-    width: 30%;
+.service-hero-text {
+    text-align: center;
+    font-size: 3rem;
+    width: 70vw;
+    margin-bottom: 0;
 }
 
 .hero-link-list {
@@ -19,6 +22,12 @@
 
 .hero-link-list li {
     padding: 20px;
+}
+
+.service-title {
+    margin-top: 0;
+    text-align: center;
+    font-size: 5rem;
 }
 
 /* Services */
@@ -37,3 +46,5 @@
 .service-description-card-text {
     width: 50%;
 }
+
+/* Process */

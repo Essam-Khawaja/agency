@@ -5,12 +5,17 @@ import youtubeIcon from "./images/icons/youtube_activity_24dp_E8EAED_FILL0_wght4
 import codeIcon from "./images/icons/code_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg";
 import socialIcon from "./images/icons/public_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg";
 import Separator from "./Separator";
+import SpaceBackground from "./SpaceBackground";
+import Footer from "./Footer";
 
 import "./styling/About.css";
+import { useRef } from "react";
 
 function About(props) {
   return (
     <div>
+      <SpaceBackground colorChoice={2} />
+
       <div className="hero">
         <div className="left">
           <h1 className="hero-left-title">I Remember Stagnating</h1>
@@ -72,6 +77,7 @@ function About(props) {
         </div>
       </div>
 
+      <Footer />
       <div className="credentials"></div>
     </div>
   );

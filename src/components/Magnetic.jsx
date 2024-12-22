@@ -1,35 +1,59 @@
-import { motion } from "framer-motion";
-import { useRef, useState } from "react";
+"use client";
 
-function Magnetic(props) {
-  const ref = useRef(props.children);
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+import React, { useState, useEffect, useRef } from "react";
+import { motion, useMotionValue, useSpring } from "framer-motion";
 
-  const mouseMove = (event) => {
-    const { clientX, clientY } = event;
-    const { height, width, left, top } = ref.current.getBoundingClientRect();
-    const middleX = clientX - (left + width / 2);
-    const middleY = clientY - (height + top / 2);
-    setMousePosition({ x: middleX, y: middleY });
-  };
+const SPRING_CONFIG = { damping: 100, stiffness: 400 };
 
-  const mouseLeave = (event) => {
-    setMousePosition({ x: 0, y: 0 });
-  };
+function MagneticButton({ children, distance = 0.6 }) {
+  const [isHovered, setIsHovered] = useState(false);
+  const ref = useRef(null);
 
-  const { x, y } = mousePosition;
+  const x = useMotionValue(0);
+  const y = useMotionValue(0);
+
+  const springX = useSpring(x, SPRING_CONFIG);
+  const springY = useSpring(y, SPRING_CONFIG);
+
+  useEffect(() => {
+    const calculateDistance = (e) => {
+      if (ref.current) {
+        const rect = ref.current.getBoundingClientRect();
+        const centerX = rect.left + rect.width / 2;
+        const centerY = rect.top + rect.height / 2;
+        const distanceX = e.clientX - centerX;
+        const distanceY = e.clientY - centerY;
+
+        if (isHovered) {
+          x.set(distanceX * distance);
+          y.set(distanceY * distance);
+        } else {
+          x.set(0);
+          y.set(0);
+        }
+      }
+    };
+
+    document.addEventListener("mousemove", calculateDistance);
+
+    return () => {
+      document.removeEventListener("mousemove", calculateDistance);
+    };
+  }, [isHovered, distance, x, y]);
 
   return (
     <motion.div
-      onMouseMove={mouseMove}
-      onMouseLeave={mouseLeave}
-      animate={{ x, y }}
-      transition={{ type: "spring", stiffness: 150, damping: 20, mass: 0.3 }}
       ref={ref}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+      style={{
+        x: springX,
+        y: springY,
+      }}
     >
-      <div>{props.children}</div>
+      {children}
     </motion.div>
   );
 }
 
-export default Magnetic;
+export default MagneticButton;

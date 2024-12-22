@@ -4,7 +4,8 @@ import RootLayout from "./components/routes/RootLayout";
 import { RouterProvider, createBrowserRouter, NavLink } from "react-router-dom";
 import "./app.css";
 import Services from "./components/Service.jsx";
-import ServiceCard from "./components/ServiceCard.jsx";
+
+import { motion } from "framer-motion";
 
 const router = createBrowserRouter([
   {

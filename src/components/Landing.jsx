@@ -1,7 +1,10 @@
-import Magnetic from "./Magnetic";
-import { motion, transform } from "framer-motion";
+import MagneticButton from "./Magnetic";
+import { motion, useScroll, useTransform } from "framer-motion";
 import Footer from "./Footer";
+import SpaceBackground from "./SpaceBackground";
+
 import "./styling/Landing.css";
+
 import heroImage from "./images/Mobile Marketing-cuate.svg";
 import rightArrow from "./images/icons/arrow_circle_right.svg";
 import tempImage from "./images/brand loyalty-rafiki.svg";
@@ -10,8 +13,18 @@ import flowChart from "./images/icons/flowchart_24dp_E8EAED_FILL0_wght400_GRAD0_
 import deliveryTruck from "./images/icons/delivery_truck_speed_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg";
 
 function Landing(props) {
+  const { scrollY } = useScroll();
+
+  // const backgroundColor = useTransform(
+  //   scrollY,
+  //   [0, 15000],
+  //   ["transparent", "#700F32"]
+  // );
+
   return (
-    <div>
+    <motion.div style={{}} className="landing-container">
+      <SpaceBackground colorChoice={0} />
+
       <motion.div
         className="hero-container"
         initial={{ opacity: 0, y: 70 }}
@@ -25,17 +38,16 @@ function Landing(props) {
           <h2 className="sub-heading">
             Break into the digital branding space and find your new customers!
           </h2>
-          <button className="home-button">Get my Digital Brand!</button>
+          <MagneticButton>
+            <button className="home-button">
+              <span>Get my Digital Brand!</span>
+            </button>
+          </MagneticButton>
         </div>
         <img id="hero-image" src={heroImage} alt="#"></img>
       </motion.div>
 
-      <motion.div
-        className="problem-container"
-        intial={{ opacity: 0, scaleY: 2 }}
-        animate={{ opacity: 255, scaleY: 1 }}
-        transition={{ duration: 1, ease: "easeOut" }}
-      >
+      <motion.div className="problem-container">
         <h1 className="heading problem">How You Are Falling Behind</h1>
         <h2 className="sub-heading">Does this sound familiar?</h2>
         <ul className="list-container">
@@ -139,7 +151,7 @@ function Landing(props) {
       </div>
 
       <Footer></Footer>
-    </div>
+    </motion.div>
   );
 }
 
