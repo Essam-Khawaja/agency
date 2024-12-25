@@ -12,26 +12,40 @@ nav {
     z-index: 2;
 }
 
-nav ul {
+.nav{
     margin: 0;
-    padding: 0;
-    width: 70%;
+    padding: 3px;
+    width: 25%;
     height: 4vh;
+    position: relative;
+    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     list-style: none;
     align-self: center;
-    background-color: rgb(224, 31, 101, 0.7);
-    border-radius: 12px;
+    border-radius: 9999px;
+    /* border-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+    border-image-slice: fill; */
 }
 
-.bounds {
+.gradient-border {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9999px;
+    background-color: rgb(5, 6, 45, 1);
+}
+
+/* .bounds {
     width: 30%;
     display: flex;
     justify-content: center;
     align-self: center;
-}
+    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+} */
 
 .nav-button {
     background-color: transparent;
@@ -48,9 +62,12 @@ nav ul {
     text-align: center;
     transition: all 0.3s ease-in;
     text-decoration: none;
+    z-index: 2;
+    width: 20%;
+    cursor: pointer;
 }
 
-.nav-button-highlighted {
+/* .nav-button-highlighted {
     background-color: transparent;
     border-radius: 8px;
     border-width: 0;
@@ -65,12 +82,27 @@ nav ul {
     text-align: center;
     transition: all 0.3s ease-in;
     text-decoration: none;
+    z-index: 2;
+} */
+
+.nav-button.highlighted {
+    color: yellow
 }
 
-.nav-button-highlighted:hover {
-    background-color: #8c1440;
+.nav-cursor {
+    height: 70%;
+    position: absolute;
+    background-color: #512691;
+    border-radius: 9999px;
+    z-index: 1;
 }
 
-.nav-button:hover {
-    background-color: #8c1440;
+.nav-cursor-shadow {
+    height: 70%;
+    position: absolute;
+    background-color: rgb(81, 38, 145, 0.3);
+    border-radius: 9999px;
+    z-index: 0;
 }
+
+/* rgb(81, 38, 145, 0.7); */

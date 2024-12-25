@@ -33,10 +33,10 @@ function Landing(props) {
       >
         <div className="hero-text-container">
           <h1 className="heading">
-            Tap Into The <br /> Digital Market
+            Tap Into The <br /> Online Market
           </h1>
           <h2 className="sub-heading">
-            Break into the digital branding space and find your new customers!
+            Attract customers to your brand with us today!
           </h2>
           <MagneticButton>
             <button className="home-button">
@@ -145,7 +145,7 @@ function Landing(props) {
             go-ahead, we begin deploying the projects. Platforms like AWS for
             your websites, and social media for your ads. Everything is done on
             our side, so you can reap the rewards without having to worry about
-            the technicalities
+            the technicalities!
           </p>
         </div>
       </div>

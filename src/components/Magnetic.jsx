@@ -25,7 +25,11 @@ function MagneticButton({ children, distance = 0.6 }) {
         const distanceY = e.clientY - centerY;
 
         if (isHovered) {
-          x.set(distanceX * distance);
+          if (distanceX * distance > 200 || distanceX * distance < -200) {
+            x.set(0);
+          } else {
+            x.set(distanceX * distance);
+          }
           y.set(distanceY * distance);
         } else {
           x.set(0);
