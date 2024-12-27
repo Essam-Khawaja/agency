@@ -38,11 +38,9 @@ function Landing(props) {
           <h2 className="sub-heading">
             Attract customers to your brand with us today!
           </h2>
-          <MagneticButton>
-            <button className="home-button">
-              <span>Get my Digital Brand!</span>
-            </button>
-          </MagneticButton>
+          <button className="home-button">
+            <span>Get my Digital Brand!</span>
+          </button>
         </div>
         <img id="hero-image" src={heroImage} alt="#"></img>
       </motion.div>

@@ -1,6 +1,7 @@
 import instagram from "./images/instagram.svg";
 import linkedin from "./images/linkedin.svg";
-import logoImage from "./images/15917680_5666023.svg";
+import tempImage from "./images/Your paragraph text.png";
+import { NavLink } from "react-router-dom";
 import "./styling/Footer.css";
 
 function Footer(props) {
@@ -9,9 +10,21 @@ function Footer(props) {
       <div className="footer-container">
         <div>
           <h1 className="footer-heading">Ready to get started?</h1>
-          <button className="home-button">Get my Digital Brand!</button>
+          <NavLink to="/contact" className="home-button">
+            <span>Get my Digital Brand!</span>
+          </NavLink>
         </div>
-        <img src={logoImage} alt="#"></img>
+        <div>
+          <img src={tempImage} className="footer-image" alt="#" />
+          <div className="social-container">
+            <a href="https://www.instagram.com/agsemedia/?hl=en">
+              <img src={instagram} alt="#" className="social-media-icon" />
+            </a>
+            <a>
+              <img src={linkedin} alt="#" className="social-media-icon" />
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   );

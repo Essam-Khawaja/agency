@@ -10,6 +10,7 @@ import {
 } from "framer-motion";
 import "./styling/Contact.css";
 import { ReactComponent as ConstructionImage } from "./images/Construction-pana.svg";
+import { useForm, SubmitHandler } from "react-hook-form";
 
 function Contact() {
   const COLORS = ["#700F32", "#cf376d", "#996fc0", "#53356f"];
@@ -33,6 +34,15 @@ function Contact() {
     });
   }, []);
 
+  const { register, handleSubmit } = useForm();
+  const onSubmit = async (data) => {
+    try {
+      console.log(data);
+    } catch (e) {
+      console.log(e);
+    }
+  };
+
   return (
     <div>
       <motion.section
@@ -41,22 +51,23 @@ function Contact() {
         }}
         className="background"
       ></motion.section>
-      <div className="stars-container">
+      <div className="stars-container-contact">
         <Canvas>
-          <Stars radius={50} count={5000} factor={4} fade speed={2} />
+          <Stars radius={50} count={2500} factor={4} fade speed={2} />
         </Canvas>
       </div>
 
       <div className="contact-container">
         <div className="contact-form">
-          <h1 className="form-title">Lets Build Something Beautiful</h1>
-          <form className="form-container">
+          <h1 className="form-title">Let's Build Something Beautiful!</h1>
+          <form className="form-container" onSubmit={handleSubmit(onSubmit)}>
             <div className="form-section who">
-              <h2>Who Are You?</h2>
+              <h2 className="form-section-heading">Who Are You?</h2>
               <div className="side-section">
                 <div className="input-container">
                   <label>Name</label>
                   <input
+                    {...register("name")}
                     type="text"
                     placeholder="Name"
                     className="form-input"
@@ -65,6 +76,7 @@ function Contact() {
                 <div className="input-container">
                   <label>Business Name</label>
                   <input
+                    {...register("business-name")}
                     type="text"
                     placeholder="Business Name"
                     className="form-input"
@@ -74,6 +86,7 @@ function Contact() {
               <div className="input-container-description">
                 <label>What Do You Do?</label>
                 <textarea
+                  {...register("business-description")}
                   type="text"
                   placeholder="Give a brief description of your business"
                   className="form-input description"
@@ -82,11 +95,12 @@ function Contact() {
             </div>
 
             <div className="form-section">
-              <h2>Contact Information</h2>
+              <h2 className="form-section-heading">Contact Information</h2>
               <div className="side-section">
                 <div className="input-container">
                   <label>Email</label>
                   <input
+                    {...register("email")}
                     type="text"
                     placeholder="Email"
                     className="form-input"
@@ -95,6 +109,7 @@ function Contact() {
                 <div className="input-container">
                   <label>Phone Number</label>
                   <input
+                    {...register("phone-number")}
                     type="text"
                     placeholder="Phone Number (including country code)"
                     className="form-input"
@@ -104,6 +119,7 @@ function Contact() {
               <div className="input-container-description">
                 <label>What are you particularly looking for?</label>
                 <textarea
+                  {...register("project-description")}
                   type="text"
                   placeholder="Tell us what you wish to sign up for with an estimated budget"
                   className="form-input description"
@@ -111,7 +127,7 @@ function Contact() {
               </div>
             </div>
             <button type="submit" className="home-button">
-              Submit
+              <span>Submit</span>
             </button>
           </form>
         </div>
