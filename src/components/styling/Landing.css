@@ -478,7 +478,7 @@ img {
     justify-content: space-between;
     align-items: center;
     margin-top: 0;
-    margin-bottom: 10px;
+    margin-bottom: 200px;
 }
 
 .card {
@@ -489,13 +489,22 @@ img {
     align-items: center;
 }
 
+.card h1 {
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
 .card img {
     width: 150px;
 }
 
+.bold {
+    font-weight: bold;
+}
+
 .why-description {
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 @media (max-width: 1375px) {
@@ -531,12 +540,19 @@ img {
 
 /* Process Container */
 
+.flex-process {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
 .process-container {
     width: 50%;
 }
 
 .process {
-    text-align: left;
+    text-align: center;
     text-decoration: underline;
 }
 
@@ -545,8 +561,18 @@ img {
 }
 
 .sub-sub-heading {
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-top: 0;
+}
+
+.process-container h1 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.process-container p {
+    text-align: center;
+    font-size: 1.5rem;
 }
 
 @media (max-width: 1392px) {

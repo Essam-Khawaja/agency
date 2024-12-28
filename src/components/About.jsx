@@ -59,7 +59,7 @@ function About(props) {
         </div>
       </div>
 
-      <div className="team">
+      <div className="team" id="team">
         <h1>Meet the team</h1>
         <div className="team-member essam">
           <div>

@@ -73,14 +73,22 @@ function Landing(props) {
         <div className="solution-text-container">
           <h1 className="heading">We Can Help YOU!</h1>
           <p className="paragraph-desc">
-            The online world holds boundless opportunities - by developing a
+            {/* The online world holds boundless opportunities - by developing a
             sensible marketing strategy, we help avoid all the plateaus of small
-            businesses!
+            businesses! */}
             {/* Stand out from your competitors with the help of our results-driven
             strategies. */}
+            <span className="bold">
+              Stand out from your competitors with the help of our
+              results-driven strategies.
+            </span>{" "}
+            <br />
+            <NavLink to="/about#team">With our team</NavLink>, you can expect to
+            crush your business goals quicker and guarantee results.
           </p>
         </div>
       </div>
+
       <div className="why-page">
         <div class="card">
           <img src={lightBulb} alt="#"></img>
@@ -111,36 +119,39 @@ function Landing(props) {
         </div>
       </div>
 
-      <div className="process-container">
-        <h1 className="heading problem">How it Works: </h1>
-        <div className="process-stage">
-          <h2 className="sub-heading process">01</h2>
-          <h3 className="process sub-sub-heading">Book/Schedule</h3>
-          <p>
-            Book a meeting with us to discuss your problems and to find your
-            solutions. Once found, we will formulate a plan, ensuring we receive
-            your affirmation before going ahead.
-          </p>
-        </div>
-        <div className="process-stage">
-          <h2 className="sub-heading process">02</h2>
-          <h3 className="process sub-sub-heading">We'll get to work</h3>
-          <p>
-            With our plan, our team begins working on your brand. From the
-            website building to the content creation, we begin solidifying your
-            online presence. Once done, we ask for any revisions from your side.
-          </p>
-        </div>
-        <div className="process-stage">
-          <h2 className="sub-heading process">03</h2>
-          <h3 className="process sub-sub-heading">Happily ever after</h3>
-          <p>
-            After all the projects have been built, and after receiving your
-            go-ahead, we begin deploying the projects. Platforms like AWS for
-            your websites, and social media for your ads. Everything is done on
-            our side, so you can reap the rewards without having to worry about
-            the technicalities!
-          </p>
+      <div className="flex-process">
+        <div className="process-container">
+          <h1 className="heading problem">How it Works: </h1>
+          <div className="process-stage">
+            <h2 className="sub-heading process">01</h2>
+            <h3 className="process sub-sub-heading">Book/Schedule</h3>
+            <p>
+              Book a meeting with us to discuss your problems and to find your
+              solutions. Once found, we will formulate a plan, ensuring we
+              receive your affirmation before going ahead.
+            </p>
+          </div>
+          <div className="process-stage">
+            <h2 className="sub-heading process">02</h2>
+            <h3 className="process sub-sub-heading">We'll get to work</h3>
+            <p>
+              With our plan, our team begins working on your brand. From the
+              website building to the content creation, we begin solidifying
+              your online presence. Once done, we ask for any revisions from
+              your side.
+            </p>
+          </div>
+          <div className="process-stage">
+            <h2 className="sub-heading process">03</h2>
+            <h3 className="process sub-sub-heading">Happily ever after</h3>
+            <p>
+              After all the projects have been built, and after receiving your
+              go-ahead, we begin deploying the projects. Platforms like AWS for
+              your websites, and social media for your ads. Everything is done
+              on our side, so you can reap the rewards without having to worry
+              about the technicalities!
+            </p>
+          </div>
         </div>
       </div>
       <Footer />
