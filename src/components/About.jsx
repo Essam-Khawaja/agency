@@ -18,7 +18,7 @@ function About(props) {
 
       <div className="hero">
         <div className="left">
-          <h1 className="hero-left-title">I Remember Stagnating</h1>
+          <h1 className="hero-left-title">I Remember Stagnating...</h1>
           <p className="hero-left-description">
             I was never a social media person, but I realised this was
             preventing my personal growth. Whether it be the lack of job offers
@@ -61,18 +61,24 @@ function About(props) {
 
       <div className="team">
         <h1>Meet the team</h1>
-        <div className="team-member">
+        <div className="team-member essam">
           <div>
             <h2>Essam</h2>
-            <p>Help please</p>
+            <p>
+              Help please Help please Help please Help please Help please Help
+              please Help please Help please Help please Help please Help please
+            </p>
           </div>
           <img src={essam} alt="#" className="profile-picture"></img>
         </div>
-        <div className="team-member">
+        <div className="team-member ghazi">
           <img src={tempImage} alt="#"></img>
           <div>
             <h2>Ghazi</h2>
-            <p>Bozo</p>
+            <p>
+              BozoBozoBozo BozoBozoBozo BozoBozoBozo BozoBozoBozo BozoBozoBozo
+              BozoBozoBozo BozoBozoBozo BozoBozoBozo BozoBozo
+            </p>
           </div>
         </div>
       </div>

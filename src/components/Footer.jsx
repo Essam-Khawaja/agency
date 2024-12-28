@@ -10,7 +10,7 @@ function Footer(props) {
       <div className="footer-container">
         <div>
           <h1 className="footer-heading">Ready to get started?</h1>
-          <NavLink to="/contact" className="home-button">
+          <NavLink to="/contact" className="footer-button">
             <span>Get my Digital Brand!</span>
           </NavLink>
         </div>

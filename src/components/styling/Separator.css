@@ -12,3 +12,12 @@
     background-color: white;
     /* margin-bottom: 10vh; */
 }
+
+@media (max-width: 1173px) {
+    .separator {
+        height: 1vh;
+        width: 100%;
+        background-color: white;
+        /* margin-bottom: 10vh; */
+    }
+}

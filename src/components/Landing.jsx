@@ -1,7 +1,7 @@
-import MagneticButton from "./Magnetic";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Footer from "./Footer";
 import SpaceBackground from "./SpaceBackground";
+import { NavLink } from "react-router-dom";
 
 import "./styling/Landing.css";
 
@@ -38,9 +38,9 @@ function Landing(props) {
           <h2 className="sub-heading">
             Attract customers to your brand with us today!
           </h2>
-          <button className="home-button">
+          <NavLink to="/contact" className="home-button">
             <span>Get my Digital Brand!</span>
-          </button>
+          </NavLink>
         </div>
         <img id="hero-image" src={heroImage} alt="#"></img>
       </motion.div>
@@ -69,19 +69,15 @@ function Landing(props) {
       </motion.div>
 
       <div className="solution-container">
-        <img src={tempImage} alt="#"></img>
+        <img className="solution-image" src={tempImage} alt="#"></img>
         <div className="solution-text-container">
-          <h1 className="heading">How we help YOU avoid the struggle</h1>
+          <h1 className="heading">We Can Help YOU!</h1>
           <p className="paragraph-desc">
-            AD Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu
-            sem lectus. Sed molestie vehicula mi, eu tempor risus euismod eget.
-            Mauris egestas neque et ligula tempor, eget tempor dui vehicula.
-            Suspendisse sollicitudin diam justo, egestas bibendum turpis iaculis
-            gravida. Orci varius natoque penatibus et magnis dis parturient
-            montes, nascetur ridiculus mus. Curabitur at eleifend urna, a varius
-            ex. Proin fringilla, dui a tempus sagittis, justo orci pellentesque
-            diam, ac aliquet justo enim interdum nunc. Maecenas id massa vel
-            nunc pretium sodales pulvinar sed ligula.
+            The online world holds boundless opportunities - by developing a
+            sensible marketing strategy, we help avoid all the plateaus of small
+            businesses!
+            {/* Stand out from your competitors with the help of our results-driven
+            strategies. */}
           </p>
         </div>
       </div>
@@ -147,8 +143,7 @@ function Landing(props) {
           </p>
         </div>
       </div>
-
-      <Footer></Footer>
+      <Footer />
     </motion.div>
   );
 }

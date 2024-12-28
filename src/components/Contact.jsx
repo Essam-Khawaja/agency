@@ -60,6 +60,7 @@ function Contact() {
       <div className="contact-container">
         <div className="contact-form">
           <h1 className="form-title">Let's Build Something Beautiful!</h1>
+
           <form className="form-container" onSubmit={handleSubmit(onSubmit)}>
             <div className="form-section who">
               <h2 className="form-section-heading">Who Are You?</h2>
@@ -93,7 +94,6 @@ function Contact() {
                 ></textarea>
               </div>
             </div>
-
             <div className="form-section">
               <h2 className="form-section-heading">Contact Information</h2>
               <div className="side-section">
@@ -126,12 +126,12 @@ function Contact() {
                 ></textarea>
               </div>
             </div>
-            <button type="submit" className="home-button">
+            <button type="submit" className="submit-button">
               <span>Submit</span>
             </button>
           </form>
         </div>
-        <ConstructionImage className="contact-image" />
+        {/* <ConstructionImage className="contact-image" /> */}
       </div>
     </div>
   );

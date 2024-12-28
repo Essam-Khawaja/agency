@@ -14,23 +14,23 @@
     margin-bottom: 0;
 }
 
-.hero-link-list {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
+@media (max-width: 1652px) {
+    .service-hero-text {
+        font-size: 2rem;
+    }
+}
+@media (max-width: 1101px) {
+    .service-hero-text {
+        font-size: 1.5rem;
+    }
 }
 
-.hero-link-list li {
-    padding: 20px;
-}
-
+/* Services */
 .service-title {
     margin-top: 0;
     text-align: center;
     font-size: 5rem;
 }
-
-/* Services */
 
 .service-description-card {
     display: flex;
@@ -47,4 +47,8 @@
     width: 50%;
 }
 
-/* Process */
+@media (max-width: 1539px) {
+    .service-title {
+        font-size: 3rem;
+    }
+}
