@@ -16,7 +16,6 @@ function Footer(props) {
         </div>
         <div>
           <img src={tempImage} className="footer-image" alt="#" />
-          <h1> Hi </h1>
           <div className="social-container">
             <a
               href="https://www.instagram.com/agsemedia/?hl=en"
