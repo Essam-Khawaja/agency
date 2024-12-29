@@ -11,6 +11,8 @@ import {
 import "./styling/Contact.css";
 import { ReactComponent as ConstructionImage } from "./images/Construction-pana.svg";
 import { useForm, SubmitHandler } from "react-hook-form";
+import { db } from "../config/firebase";
+import { collection, addDoc } from "firebase/firestore";
 
 function Contact() {
   const COLORS = ["#700F32", "#cf376d", "#996fc0", "#53356f"];
@@ -18,6 +20,24 @@ function Contact() {
   const color = useMotionValue(COLORS[0]);
   const size = useMotionValue(SIZES[0]);
   const backgroundImage1 = useMotionTemplate`radial-gradient(100% 100% at 50% 0%, #1e1e1e ${size}, ${color})`;
+
+  const dbRef = collection(db, "user-data");
+
+  const {
+    register,
+    handleSubmit,
+    formState,
+    reset,
+    formState: { isSubmitSuccessful },
+  } = useForm();
+  const onSubmit = async (data) => {
+    try {
+      await addDoc(dbRef, data);
+      window.location.href = window.location.href;
+    } catch (e) {
+      console.log(e);
+    }
+  };
 
   useEffect(() => {
     animate(color, COLORS, {
@@ -32,16 +52,10 @@ function Contact() {
       repeat: Infinity,
       repeatType: "mirror",
     });
-  }, []);
-
-  const { register, handleSubmit } = useForm();
-  const onSubmit = async (data) => {
-    try {
-      console.log(data);
-    } catch (e) {
-      console.log(e);
+    if (formState.isSubmitSuccessful) {
+      reset();
     }
-  };
+  }, [formState, reset]);
 
   return (
     <div>

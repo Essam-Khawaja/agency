@@ -13,8 +13,6 @@ function Nav(props) {
 
   const location = useLocation();
 
-  console.log(location);
-
   const [position, setPosition] = useState({
     left: 0,
     width: 0,

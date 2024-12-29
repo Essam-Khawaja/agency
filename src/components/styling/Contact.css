@@ -75,16 +75,15 @@
     color: white;
     background-color: transparent;
     border-bottom: 2px white solid;
-    border-top: 0;
+    /* border-top: 0;
     border-left: 0;
-    border-right: 0;
+    border-right: 0; */
     font-size: 1rem;
 }
 
 ::placeholder {
     color: white;
     font-size:1rem;
-    vertical-align: bottom;
 }
 
 label {
@@ -294,5 +293,21 @@ label {
     }
     label {
         font-size: 0.7rem;
+    }
+  }
+
+  @media (max-height: 750px) {
+    .contact-form {
+        height: fit-content;
+        margin-bottom: 50px;
+    }
+   .background {
+        height: 110vh;
+    }
+    .stars-container-contact {
+        height: 110vh;
+    } 
+    .submit-button {
+        height: 30px;
     }
   }

@@ -33,26 +33,26 @@ function About(props) {
 
       <h1 className="stats-title">Why Us?</h1>
       <div className="stats">
-        <div class="card">
+        <div class="stats-card">
           <img src={youtubeIcon} alt="#"></img>
           <h1>4+ Years of Content Creation</h1>
-          <p className="why-description">
+          <p className="stats-description">
             Our in-house editor has been making content for about half a decade,
             so we guarantee great results!
           </p>
         </div>
-        <div class="card">
+        <div class="stats-card">
           <img src={codeIcon} alt="#"></img>
           <h1>2+ Years of Web Developmet</h1>
-          <p className="why-description">
+          <p className="stats-description">
             Our in-house web developer can do full stack development, from a
             simple blog website to complex e-commerce businesses
           </p>
         </div>
-        <div class="card">
+        <div class="stats-card">
           <img src={socialIcon} alt="#"></img>
           <h1>10+ years of Social Media</h1>
-          <p className="why-description">
+          <p className="stats-description">
             We have used social media for our entire lives, so we know exactly
             what type of marketing works!
           </p>

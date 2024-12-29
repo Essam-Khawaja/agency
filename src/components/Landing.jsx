@@ -47,7 +47,7 @@ function Landing(props) {
 
       <motion.div className="problem-container">
         <h1 className="heading problem">How You Are Falling Behind</h1>
-        <h2 className="sub-heading">Does this sound familiar?</h2>
+        <h2 className="sub-heading problem">Does this sound familiar?</h2>
         <ul className="list-container">
           <div className="point-container">
             <img className="bullet-point" src={rightArrow} alt="#"></img>
@@ -90,8 +90,8 @@ function Landing(props) {
       </div>
 
       <div className="why-page">
-        <div class="card">
-          <img src={lightBulb} alt="#"></img>
+        <div class="why-card">
+          <img className="why-image" src={lightBulb} alt="#"></img>
           <h1>From Scratch</h1>
           <p className="why-description">
             We design everything from scratch; using only your guidance and
@@ -99,8 +99,8 @@ function Landing(props) {
             that vision comes true!
           </p>
         </div>
-        <div class="card">
-          <img src={flowChart} alt="#"></img>
+        <div class="why-card">
+          <img className="why-image" src={flowChart} alt="#"></img>
           <h1>Streamlined Process</h1>
           <p className="why-description">
             We work swift and fast, ensuring to use the latest project
@@ -108,8 +108,8 @@ function Landing(props) {
             completion of your task.
           </p>
         </div>
-        <div class="card">
-          <img src={deliveryTruck} alt="#"></img>
+        <div class="why-card">
+          <img className="why-image" src={deliveryTruck} alt="#"></img>
           <h1>Reliable Delivery</h1>
           <p className="why-description">
             We give you the best possible solution, with modern platforms for
@@ -125,7 +125,7 @@ function Landing(props) {
           <div className="process-stage">
             <h2 className="sub-heading process">01</h2>
             <h3 className="process sub-sub-heading">Book/Schedule</h3>
-            <p>
+            <p className="process-description">
               Book a meeting with us to discuss your problems and to find your
               solutions. Once found, we will formulate a plan, ensuring we
               receive your affirmation before going ahead.
@@ -134,7 +134,7 @@ function Landing(props) {
           <div className="process-stage">
             <h2 className="sub-heading process">02</h2>
             <h3 className="process sub-sub-heading">We'll get to work</h3>
-            <p>
+            <p className="process-description">
               With our plan, our team begins working on your brand. From the
               website building to the content creation, we begin solidifying
               your online presence. Once done, we ask for any revisions from
@@ -144,7 +144,7 @@ function Landing(props) {
           <div className="process-stage">
             <h2 className="sub-heading process">03</h2>
             <h3 className="process sub-sub-heading">Happily ever after</h3>
-            <p>
+            <p className="process-description">
               After all the projects have been built, and after receiving your
               go-ahead, we begin deploying the projects. Platforms like AWS for
               your websites, and social media for your ads. Everything is done
