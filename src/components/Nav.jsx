@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./styling/Nav.css";
 import { motion } from "framer-motion";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 function Nav(props) {
   const homeRef = useRef(null);
@@ -22,6 +22,8 @@ function Nav(props) {
     width: 0,
     opacity: 0,
   });
+
+  const navigate = useNavigate();
 
   useEffect(() => {
     if (location.pathname === "/") {
@@ -45,6 +47,9 @@ function Nav(props) {
         width: contactRef.current.getBoundingClientRect().width,
       });
     }
+    window.addEventListener("resize", () => {
+      navigate(`${location.pathname}`);
+    });
   }, [location]);
 
   return (

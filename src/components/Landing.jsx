@@ -44,8 +44,8 @@ function Landing(props) {
       </motion.div>
 
       <motion.div className="problem-container">
-        <h1 className="heading problem">Does this sound familiar?</h1>
-        <h2 className="sub-heading problem">Does this sound familiar?</h2>
+        <h1 className="heading problem">Do you struggle with this?</h1>
+        {/* <h2 className="sub-heading problem">Does this sound familiar?</h2> */}
         <ul className="list-container">
           <div className="point-container">
             <img className="bullet-point" src={rightArrow} alt="#"></img>
@@ -79,7 +79,7 @@ function Landing(props) {
             <span className="bold">
               Stand out from your competitors with the help of our
               results-driven strategies.
-            </span>{" "}
+            </span>
             <br />
             <NavLink to="/about#team">With our team</NavLink>, you can expect to
             crush your business goals quicker and guarantee results.
