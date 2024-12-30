@@ -219,11 +219,13 @@ body {
     width: 33%;
     justify-content: space-between;
     align-items: center;
+    gap: 50px;
 }
 
 .team-member img {
-    width: 200px;
+    width: 300px;
     margin: 50px;
+    align-self: center;
 }
 
 .team-member h2 {

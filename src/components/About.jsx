@@ -1,6 +1,7 @@
 import tempImage from "./images/Your paragraph text.png";
 import heroImage from "./images/Stress-rafiki.svg";
-import essam from "./images/IMG_3040.jpeg";
+import essam from "./images/IMG_9058.jpg";
+import ghazi from "./images/300f7ed0-596a-4505-84e7-8f4d061442f9.jpg";
 import youtubeIcon from "./images/icons/youtube_activity_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg";
 import codeIcon from "./images/icons/code_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg";
 import socialIcon from "./images/icons/public_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg";
@@ -64,19 +65,22 @@ function About(props) {
           <div>
             <h2>Essam</h2>
             <p>
-              Help please Help please Help please Help please Help please Help
-              please Help please Help please Help please Help please Help please
+              The founder of AGSE Media with over two years of experience in web
+              design and a year in project management. Creating websites that
+              are tailored to your brand and meeting business goals is never a
+              challenge for him.
             </p>
           </div>
           <img src={essam} alt="#" className="profile-picture"></img>
         </div>
         <div className="team-member ghazi">
-          <img src={tempImage} alt="#"></img>
+          <img src={ghazi} alt="#" className="profile-picture"></img>
           <div>
             <h2>Ghazi</h2>
             <p>
-              BozoBozoBozo BozoBozoBozo BozoBozoBozo BozoBozoBozo BozoBozoBozo
-              BozoBozoBozo BozoBozoBozo BozoBozoBozo BozoBozo
+              A co-founder and a graphic design expert who represents your brand
+              using art. He has honed his editing skills for 6 years whilst
+              having a knack for planning ad campaigns.
             </p>
           </div>
         </div>
