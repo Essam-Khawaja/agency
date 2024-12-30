@@ -47,9 +47,6 @@ function Nav(props) {
         width: contactRef.current.getBoundingClientRect().width,
       });
     }
-    window.addEventListener("resize", () => {
-      navigate(`${location.pathname}`);
-    });
   }, [location]);
 
   return (

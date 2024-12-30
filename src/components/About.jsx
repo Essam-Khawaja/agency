@@ -42,7 +42,7 @@ function About(props) {
         </div>
         <div class="stats-card">
           <img src={codeIcon} alt="#"></img>
-          <h1>2+ Years of Web Developmet</h1>
+          <h1>2+ Years of Web Development</h1>
           <p className="stats-description">
             Our in-house web developer can do full stack development, from a
             simple blog website to complex e-commerce businesses

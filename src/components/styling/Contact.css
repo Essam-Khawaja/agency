@@ -179,6 +179,20 @@ label {
     background: none;
   }
 
+  @media (max-height: 1100px) {
+    .background {
+        height: fit-content;
+    }
+    .contact-container {
+        padding-top: 50px;
+        height: fit-content;
+        padding-bottom: 200px;
+    }
+    .submit-button {
+        height: 10vh;
+    }
+  }
+
   @media (max-width: 1924px) {
     .form-title {
         font-size: 2rem;

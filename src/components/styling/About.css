@@ -29,6 +29,12 @@ body {
     width: 800px;
 }
 
+@media (max-height: 1110px) {
+    .hero {
+        height: fit-content;
+    }
+}
+
 @media (max-width: 2461px) {
     .hero-left-title {
         font-size: 4rem;
@@ -139,6 +145,13 @@ body {
     text-align: center;
 }
 
+@media (max-height: 1110px) {
+    .stats {
+        height: fit-content;
+        margin-bottom: 100px;
+    }
+}
+
 @media (max-width: 1564px) {
     .stats-card {
         width: 20%;
@@ -220,6 +233,12 @@ body {
 
 .team-member p {
     font-size: 1.5rem;
+}
+
+@media (max-height: 1110px) {
+    .team {
+        height: fit-content;
+    }
 }
 
 @media (max-width: 1760px) {

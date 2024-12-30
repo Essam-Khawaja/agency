@@ -81,6 +81,12 @@
     background: none;
   }
   
+@media (max-height: 1110px) {
+    .footer-container {
+        height: fit-content;
+        padding: 10%;
+    }
+}
 
 @media (max-width: 1688px) {
     .footer-heading {

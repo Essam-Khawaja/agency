@@ -107,7 +107,13 @@ nav {
 
 /* rgb(81, 38, 145, 0.7); */
 
-@media (max-width: 2075px) {
+@media (max-height: 1110px) {
+    .nav {
+        height: fit-content;
+    }
+}
+
+@media (max-width: 2300px) {
     .nav{
         margin: 0;
         padding: 3px;

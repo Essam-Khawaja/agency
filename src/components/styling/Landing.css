@@ -113,6 +113,13 @@ img {
   background: none;
 }
 
+@media (max-height: 1100px) {
+    .hero-container {
+        height: fit-content;
+        margin-bottom: 200px;
+    }
+}
+
 @media (max-width: 2232px) {
     .heading {
         font-size: 6rem;
@@ -352,6 +359,13 @@ img {
     margin-right: 10px;
 }
 
+@media (max-height: 1100px) {
+    .problem-container {
+        height: fit-content;
+        margin-bottom: 200px;
+    }
+}
+
 @media (max-width: 1627px) {
     .list-container {
         margin-top: 30px;
@@ -452,6 +466,13 @@ img {
     text-align: center;
 }
 
+@media (max-height: 1100px) {
+    .solution-container {
+        height: fit-content;
+        margin-bottom: 200px;
+    }
+}
+
 @media (max-width: 2035px) {
     .solution-container .heading {
         font-size: 6rem;
@@ -533,6 +554,13 @@ img {
 .why-description {
     text-align: center;
     font-size: 1.75rem;
+}
+
+@media (max-height: 1100px) {
+    .why-page {
+        height: fit-content;
+        margin-bottom: 200px;
+    }
 }
 
 @media (max-width: 1545px) {
@@ -626,6 +654,12 @@ img {
 .process-description{
     text-align: center;
     font-size: 1.5rem;
+}
+
+@media (max-height: 1100px) {
+    .flex-process {
+        height: fit-content;
+    }
 }
 
 @media (max-width: 1392px) {
