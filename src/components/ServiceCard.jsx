@@ -1,11 +1,9 @@
 import ReactDOM from "react-dom";
 import "./styling/ServiceCard.css";
 import { NavLink } from "react-router-dom";
-import { color, useAnimate, useTransform } from "framer-motion";
+import { useTransform } from "framer-motion";
 import { motion } from "framer-motion";
 import { useScroll } from "framer-motion";
-import { useEffect } from "react";
-import StickyCursor from "./StickyCursor";
 import { useRef } from "react";
 import tempImage from "./images/Your paragraph text.png";
 import closeIcon from "./images/icons/close_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg";

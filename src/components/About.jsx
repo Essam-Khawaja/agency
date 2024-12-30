@@ -9,7 +9,6 @@ import SpaceBackground from "./SpaceBackground";
 import Footer from "./Footer";
 
 import "./styling/About.css";
-import { useRef } from "react";
 
 function About(props) {
   return (

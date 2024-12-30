@@ -1,5 +1,4 @@
 import Separator from "./Separator";
-import { useState } from "react";
 
 import "./styling/Service.css";
 

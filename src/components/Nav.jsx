@@ -1,6 +1,5 @@
-import MagneticButton from "./Magnetic";
-import { forwardRef, useEffect, useRef, useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { useEffect, useRef, useState } from "react";
+import { NavLink } from "react-router-dom";
 import "./styling/Nav.css";
 import { motion } from "framer-motion";
 import { useLocation } from "react-router-dom";
@@ -155,66 +154,10 @@ function Nav(props) {
             >
               Work With US!
             </NavLink>
-            {/* <NavButton
-              ref={aboutRef}
-              setPosition={setPosition}
-              setShadowPosition={setShadowPosition}
-              location="/about"
-            >
-              About
-            </NavButton>
-            <NavButton
-              ref={processRef}
-              setPosition={setPosition}
-              setShadowPosition={setShadowPosition}
-              location="/services"
-            >
-              Services
-            </NavButton>
-            <NavButton
-              ref={contactRef}
-              setPosition={setPosition}
-              setShadowPosition={setShadowPosition}
-              location="/contact"
-            >
-              Work With US!
-            </NavButton> */}
           </div>
         </ul>
       </nav>
     </div>
-  );
-}
-
-function NavButton({ children, setShadowPosition, location }) {
-  const ref = useRef(null);
-
-  return (
-    <NavLink
-      to={location}
-      className="nav-button"
-      ref={ref}
-      onMouseEnter={() => {
-        if (!ref.current) return;
-
-        const { width } = ref.current.getBoundingClientRect();
-
-        setShadowPosition({
-          width,
-          opacity: 1,
-          left: ref.current.offsetLeft,
-        });
-      }}
-      onMouseLeave={() => {
-        setShadowPosition({
-          width: ref.current.getBoundingClientRect().width,
-          left: ref.current.offsetLeft,
-          opacity: 0,
-        });
-      }}
-    >
-      {children}
-    </NavLink>
   );
 }
 

@@ -30,7 +30,7 @@ function SpaceBackground({ colorChoice, height }) {
       repeat: Infinity,
       repeatType: "mirror",
     });
-  }, []);
+  });
 
   return (
     <div>

@@ -1,4 +1,4 @@
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
 import Footer from "./Footer";
 import SpaceBackground from "./SpaceBackground";
 import { NavLink } from "react-router-dom";
@@ -13,8 +13,6 @@ import flowChart from "./images/icons/flowchart_24dp_E8EAED_FILL0_wght400_GRAD0_
 import deliveryTruck from "./images/icons/delivery_truck_speed_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg";
 
 function Landing(props) {
-  const { scrollY } = useScroll();
-
   // const backgroundColor = useTransform(
   //   scrollY,
   //   [0, 15000],
@@ -46,7 +44,7 @@ function Landing(props) {
       </motion.div>
 
       <motion.div className="problem-container">
-        <h1 className="heading problem">How You Are Falling Behind</h1>
+        <h1 className="heading problem">Does this sound familiar?</h1>
         <h2 className="sub-heading problem">Does this sound familiar?</h2>
         <ul className="list-container">
           <div className="point-container">
