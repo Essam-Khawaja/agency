@@ -1,4 +1,4 @@
-.background {
+.contact-background {
     position: absolute;
     top: 0;
     left: 0;
@@ -180,16 +180,27 @@ label {
   }
 
   @media (max-height: 1100px) {
-    .background {
+    .contact-background {
+        height: fit-content;
+        width: 100%;
+    }
+    .contact-form {
         height: fit-content;
     }
-    .contact-container {
-        padding-top: 50px;
-        height: fit-content;
-        padding-bottom: 200px;
+    .form-section.bottom {
+        padding-bottom: 20px;
     }
     .submit-button {
-        height: 10vh;
+        height: 5vh;
+    }
+  }
+
+  @media (max-height: 845px) {
+    .contact-container {
+        height: 150vh;
+    }
+    .submit-button {
+        height: 50px;
     }
   }
 
@@ -250,6 +261,10 @@ label {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding: 20px;
+    }
+    .form-title {
+        text-align: center;
     }
   }
 
@@ -289,7 +304,7 @@ label {
         align-items: center;
     }
   }
-
+/* 
   @media (max-width: 692px) {
     .form-title {
         font-size: 1rem;
@@ -314,20 +329,4 @@ label {
     label {
         font-size: 0.7rem;
     }
-  }
-
-  @media (max-height: 750px) {
-    .contact-form {
-        height: fit-content;
-        margin-bottom: 50px;
-    }
-   .background {
-        height: 110vh;
-    }
-    .stars-container-contact {
-        height: 110vh;
-    } 
-    .submit-button {
-        height: 30px;
-    }
-  }
+  } */

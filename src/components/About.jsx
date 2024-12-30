@@ -18,12 +18,13 @@ function About(props) {
 
       <div className="hero">
         <div className="left">
-          <h1 className="hero-left-title">I Remember Stagnating...</h1>
+          <h1 className="hero-left-title">We Were Lost Too...</h1>
           <p className="hero-left-description">
-            I was never a social media person, but I realised this was
-            preventing my personal growth. Whether it be the lack of job offers
-            or the lack of opportunities for me to put myself out there, I truly
-            believe that the internet is a great place for growth.
+            We were never into social media a lot, but then we realised that
+            this was preventing our personal growth. Whether it would be the
+            lack of job offers or the lack of opportunities for us to put
+            ourselves out there, we truly believe that the internet is a great
+            place for growth.
           </p>
         </div>
         <img src={heroImage} alt="#"></img>

@@ -219,11 +219,10 @@ body {
     width: 33%;
     justify-content: space-between;
     align-items: center;
-    gap: 50px;
 }
 
 .team-member img {
-    width: 300px;
+    width: 250px;
     margin: 50px;
     align-self: center;
 }
@@ -243,7 +242,7 @@ body {
     }
 }
 
-@media (max-width: 1760px) {
+@media (max-width: 2200px) {
     .team h1 {
         font-size: 2.5rem;
         text-decoration: underline;
@@ -253,7 +252,7 @@ body {
         text-decoration: underline;
     }
     .team-member p {
-        font-size: 1rem;
+        font-size: 1.25rem;
     }
     .team-member img {
         width: 150px;
@@ -261,7 +260,7 @@ body {
     } 
 }
 
-@media (max-width: 1325px) {
+@media (max-width: 1550px) {
     .team {
         height: fit-content;
     }

@@ -44,7 +44,7 @@ function Landing(props) {
       </motion.div>
 
       <motion.div className="problem-container">
-        <h1 className="heading problem">Do you struggle with this?</h1>
+        <h1 className="heading problem">Do you struggle with:</h1>
         {/* <h2 className="sub-heading problem">Does this sound familiar?</h2> */}
         <ul className="list-container">
           <div className="point-container">

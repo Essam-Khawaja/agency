@@ -1,5 +1,6 @@
 import instagram from "./images/instagram.svg";
 import linkedin from "./images/linkedin.svg";
+import facebook from "./images/icons/facebook_2111396.png";
 import tempImage from "./images/logo.png";
 import { NavLink } from "react-router-dom";
 import "./styling/Footer.css";
@@ -23,7 +24,13 @@ function Footer(props) {
             >
               <img src={instagram} alt="#" className="social-media-icon" />
             </a>
-            <a>
+            <a href=" https://www.facebook.com/agsemedia/" target="_blank">
+              <img src={facebook} alt="#" className="social-media-icon" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/agse-media-223a30343/"
+              target="_blank"
+            >
               <img src={linkedin} alt="#" className="social-media-icon" />
             </a>
           </div>

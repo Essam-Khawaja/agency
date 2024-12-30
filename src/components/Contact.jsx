@@ -59,7 +59,7 @@ function Contact() {
         style={{
           backgroundImage: backgroundImage1,
         }}
-        className="background"
+        className="contact-background"
       >
         <div className="stars-container-contact">
           <Canvas>
@@ -137,7 +137,7 @@ function Contact() {
                   )}
                 </div>
               </div>
-              <div className="form-section">
+              <div className="form-section bottom">
                 <h2 className="form-section-heading">Contact Information</h2>
                 <div className="side-section">
                   <div className="input-container">
@@ -216,7 +216,6 @@ function Contact() {
               </button>
             </form>
           </div>
-          {/* <ConstructionImage className="contact-image" /> */}
         </div>
       </motion.section>
     </div>
