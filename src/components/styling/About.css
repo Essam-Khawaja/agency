@@ -201,7 +201,7 @@ body {
 }
 
 .team {
-    height: 80vh;
+    height: fit-content;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -225,6 +225,10 @@ body {
     width: 250px;
     margin: 50px;
     align-self: center;
+}
+
+.team-member.wadood img {
+    width: 275px;
 }
 
 .team-member h2 {
@@ -258,6 +262,9 @@ body {
         width: 150px;
         margin: 50px;
     } 
+    .team-member.wadood img {
+        width: 175px;
+    }
 }
 
 @media (max-width: 1550px) {
